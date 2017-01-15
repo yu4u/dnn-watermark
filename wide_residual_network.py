@@ -1,3 +1,5 @@
+# This code is imported from the following project: https://github.com/titu1994/Wide-Residual-Networks
+
 from keras.models import Model
 from keras.layers import Input, merge, Activation, Dropout, Flatten, Dense
 from keras.layers.convolutional import Convolution2D, MaxPooling2D, AveragePooling2D
