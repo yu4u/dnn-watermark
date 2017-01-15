@@ -1,0 +1,20 @@
+{
+  "target": [
+    {
+      "history": "./result/train_history.h5",
+      "path": "/WTYPE_random/DIM256/SCALE0.01/N1K4B64EPOCH3/TBLK1",
+      "label": "Embedded (random)"
+    }
+  ],
+  "color_order": [
+    "hotpink",
+    "blue",
+    "lime",
+    "red",
+    "magenta",
+    "yellow",
+    "cyan",
+    "black",
+    "gray"
+  ]
+}

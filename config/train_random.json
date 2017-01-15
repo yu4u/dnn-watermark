@@ -1,0 +1,14 @@
+{
+ "dataset": "cifar10",
+  "history": "result/train_history.h5",
+  "batch_size": 64,
+  "epoch": 200,
+  "scale": 0.01,
+  "embed_dim": 256,
+  "N": 1,
+  "k": 4,
+  
+  "target_blk_id": 1,
+  "wmark_wtype": "random",
+  "base_modelw_fname": ""
+}

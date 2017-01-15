@@ -1,0 +1,15 @@
+{
+  "target": [
+    {
+      "layer_weight": "result/random_layer_weight.npy",
+      "predict_bparam": "result/random_predict_bparam.npy",
+      "label": "Embedded (random)"
+    },
+    {
+      "layer_weight": "result/non_layer_weight.npy",
+      "predict_bparam": "result/non_predict_bparam.npy",
+      "label": "Not embedded"
+    }
+  ],
+  "draw_type": "overlay"
+}
