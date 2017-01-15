@@ -49,7 +49,10 @@ def schedule(epoch_idx):
 if __name__ == '__main__':
     settings_json_fname = sys.argv[1]
     train_settings = json.load(open(settings_json_fname))
-
+    
+    if not os.path.isdir(RESULT_PATH):
+        os.makedirs(RESULT_PATH)
+        
     # load dataset and fitting data for learning
     if train_settings['dataset'] == 'cifar10':
         dataset = cifar10
