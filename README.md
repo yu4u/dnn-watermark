@@ -5,7 +5,7 @@ This code is the implementation of "Embedding Watermarks into Deep Neural Networ
 This README will be updated later for more details.
 
 ## Requirements
-Keras 1.1.2, tensorflow 0.12.0, numpy, matplotlib, pandas
+Keras 1.1.2 (<1.2.0), tensorflow 0.12.1 (<1.0.0), numpy, matplotlib, pandas
 
  **[CAUTION]**
 We found that custom regularizers had been deprecated in the latest versions of Keras as discussed [here](https://github.com/fchollet/keras/pull/4703).
@@ -13,12 +13,12 @@ We found that custom regularizers had been deprecated in the latest versions of 
 > Custom regularizers may no longer work.
 
 Therefore please use the old versions of Keras and TensorFlow.
-(keras 1.1.2 does not work on tensorflow > 1.0.)
+(keras 1.1.2 does not work on tensorflow >= 1.0.)
 
 ```sh
 pip install keras==1.1.2
-pip install tensorflow==0.12.0
-pip install tensorflow-gpu==0.12.0
+pip install tensorflow==0.12.1
+pip install tensorflow-gpu==0.12.1
 ```
 
 
