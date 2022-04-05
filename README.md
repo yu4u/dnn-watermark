@@ -21,6 +21,10 @@ pip install tensorflow==0.12.1
 pip install tensorflow-gpu==0.12.1
 ```
 
+### Docker
+Ubuntu16.04 の apt リポジトリには `python3.6` が登録されていないため， `python3.5` を使うか [非公式のリポジトリを登録](https://askubuntu.com/questions/865554/how-do-i-install-python-3-6-using-apt-get) して使う必要がある．
+
+また，`pip21` 以降の pip は `python3.6` で追加されたフォーマット済み文字列を使用しているため，`python3.5` 以前の python を使う場合は `pip20` 以前の pip を使う必要がある．
 
 
 ## Usage
