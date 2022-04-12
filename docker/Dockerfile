@@ -29,4 +29,5 @@ RUN python -m pip install -U --no-cache-dir pip==20.3.4 \
     tensorflow==0.12.1 \
     tensorflow-gpu==0.12.1 \
     pandas \
-    matplotlib
+    matplotlib \
+    scikit-learn
