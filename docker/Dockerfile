@@ -30,4 +30,5 @@ RUN python -m pip install -U --no-cache-dir pip==20.3.4 \
     tensorflow-gpu==0.12.1 \
     pandas \
     matplotlib \
-    scikit-learn
+    scikit-learn \
+    h5py
