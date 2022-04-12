@@ -32,3 +32,6 @@ RUN python -m pip install -U --no-cache-dir pip==20.3.4 \
     matplotlib \
     scikit-learn \
     h5py
+
+ENV LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64"
+ENV CUDA_HOME=/usr/local/cuda
