@@ -12,6 +12,6 @@ docker run -it --rm \
   --shm-size=8g \
   --gpus all \
   -v "${PROJECT_DIR}:/work" \
-  -v "${PROJECT_DIR}/../dataset:/work/data" \
+  -v "${PROJECT_DIR}/../dataset/dnn-watermark/.keras:/root/.keras" \
   -w "/work" \
   "${TAG}"
