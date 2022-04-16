@@ -3,11 +3,6 @@ import pandas as pd
 import sys
 import json
 import os
-import tensorflow as tf
-gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.5)
-config = tf.ConfigProto(gpu_options=gpu_options)
-config.gpu_options.allow_growth = True
-session = tf.Session(config=config)
 import sklearn.metrics as metrics
 import wide_residual_network as wrn
 import keras.callbacks as callbacks
