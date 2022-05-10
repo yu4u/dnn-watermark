@@ -93,7 +93,7 @@ if __name__ == '__main__':
     randseed = train_settings['randseed'] if 'randseed' in train_settings else 'none'
     ohist_fname = train_settings['history']
     hist_hdf_path = 'WTYPE_{}/DIM{}/SCALE{}/N{}K{}B{}EPOCH{}/TBLK{}'.format(
-        wtype, embed_dim, scale, N, k, batch_size, nb_epoch, target_blk_id)
+        wtype, embed_dim, scale, N, k, batch_size, nb_epoch, target_blk_id).replace('.', '_')
     modelname_prefix = os.path.join(RESULT_PATH, 'wrn_' + hist_hdf_path.replace('/', '_'))
 
     # initialize process for Watermark

@@ -21,7 +21,12 @@ pip install tensorflow==0.12.1
 pip install tensorflow-gpu==0.12.1
 ```
 
-
+### Docker
+Launch the Docker container:
+```sh
+docker/launch.sh
+```
+To avoid downloading the dataset each time the container is launched, specify the path to the local dataset in `DATASET_DIR` in `launch.sh`.
 
 ## Usage
 Embed a watermark in training a host network:
