@@ -2,9 +2,8 @@ from keras import backend as K
 from keras.regularizers import Regularizer
 import numpy as np
 
-def random_index_generator(count):
-    indices = np.arange(0, count)
-    np.random.shuffle(indices)
+def random_index_generator(count, size):
+    indices = np.random.randint(0, count, size)
 
     for idx in indices:
         yield idx
@@ -37,13 +36,13 @@ class WatermarkRegularizer(Regularizer):
             self.w = np.random.randn(w_rows, w_cols)
         elif self.wtype == 'direct':
             self.w = np.zeros((w_rows, w_cols), dtype=None)
-            rand_idx_gen = random_index_generator(w_rows)
+            rand_idx_gen = random_index_generator(w_rows, w_cols)
 
             for col in range(w_cols):
                 self.w[next(rand_idx_gen)][col] = 1.
         elif self.wtype == 'diff':
             self.w = np.zeros((w_rows, w_cols), dtype=None)
-            rand_idx_gen = random_index_generator(w_rows)
+            rand_idx_gen = random_index_generator(w_rows, w_cols * 2)
 
             for col in range(w_cols):
                 self.w[next(rand_idx_gen)][col] = 1.
